@@ -1,4 +1,3 @@
-
 # GitHub Desktop Dark Fusion Theme
 
 ![Theme](https://img.shields.io/badge/theme-dark--fusion-orange.svg)
