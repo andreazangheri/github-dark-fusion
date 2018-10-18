@@ -1,6 +1,6 @@
 # Warning!
 
-This theme will override your current theme until the next update.
+This theme will override your __current selected__ theme.
 
 At the moment this theme has been tested only on macOS 10.14
 
