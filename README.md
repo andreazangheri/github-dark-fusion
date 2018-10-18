@@ -33,7 +33,7 @@ if (fs.existsSync(path.join(res, 'app/index.html'))) {
 
 let html = fs.readFileSync(html_file_path, "utf8");
 
-const link_to_inject = '<link type="text/css" href="https://cdn.jsdelivr.net/gh/typerror/github-dark-fusion@v0.1-alpha/desktop--dark-fusion.css" rel="stylesheet">';
+const link_to_inject = '<link type="text/css" href="https://cdn.jsdelivr.net/gh/typerror/github-dark-fusion@v0.2-alpha/desktop--dark-fusion.css" rel="stylesheet">';
 html = html
 	.replace(/<link[^>]+(rawgit|custom-theme)[^>]+>/, '') // remove existing custom stylesheet if there is one
 	.replace('</head>', `\n${link_to_inject}</head>`); // add stylesheet
@@ -50,7 +50,7 @@ try {
 }
 
 // clear the cache so the stylesheet can update (could alternatively cache-bust with a URL parameter)
-const {remote} = require('electron'); 
+const {remote} = require('electron');
 const win = remote.getCurrentWindow();
 win.webContents.session.clearCache(() => {
 	if (confirm('Ready to refresh? :)')) {
