@@ -35,7 +35,7 @@ if (fs.existsSync(path.join(res, 'app/index.html'))) {
 
 let html = fs.readFileSync(html_file_path, "utf8");
 
-const link_to_inject = '<link type="text/css" href="https://raw.githubusercontent.com/typerror/github-dark-fusion/master/desktop--dark-fusion.css" rel="stylesheet">';
+const link_to_inject = '<link type="text/css" href="https://cdn.jsdelivr.net/gh/user/repo@version/file" rel="stylesheet">';
 html = html
 	.replace(/<link[^>]+(rawgit|custom-theme)[^>]+>/, '') // remove existing custom stylesheet if there is one
 	.replace('</head>', `\n${link_to_inject}</head>`); // add stylesheet
