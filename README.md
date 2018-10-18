@@ -1,8 +1,5 @@
-# Warning!
 
-This theme will override your __current selected__ theme.
-
-At the moment this theme has been tested only on macOS 10.14
+# GitHub Desktop Dark Fusion Theme
 
 ![Theme](https://img.shields.io/badge/theme-dark--fusion-orange.svg)
 ![Tested platform](https://img.shields.io/badge/tested-macOS%2010.14-black.svg)
@@ -10,9 +7,11 @@ At the moment this theme has been tested only on macOS 10.14
 ![GitHub file size](https://img.shields.io/github/size/typerror/github-dark-fusion/desktop--dark-fusion.css.svg)
 ![GitHub](https://img.shields.io/github/license/typerror/github-dark-fusion.svg)
 
-# GitHub Desktop Dark Fusion Theme
+# Warning!
 
-A custom theme based on [1j01](https://gist.github.com/1j01/d8f8d11785d8fb21a70654e7aa8a4553) dark theme.
+This theme will override your __current selected__ theme.
+
+At the moment this theme has been tested only on macOS 10.14
 
 ## Install
 
