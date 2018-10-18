@@ -4,11 +4,11 @@ This theme will override your current theme until the next update.
 
 At the moment this theme has been tested only on macOS 10.14
 
-![](https://img.shields.io/badge/theme-dark--fusion-orange.svg)
-![Github file size](https://img.shields.io/github/size/typerror/github-dark-fusion/desktop--dark-fusion.css.svg)
-![](https://img.shields.io/github/license/typerror/github-dark-fusion.svg)
-![](https://img.shields.io/github/issues/typerror/github-dark-fusion.svg)
-![]()
+![Theme](https://img.shields.io/badge/theme-dark--fusion-orange.svg)
+![Tested platform](https://img.shields.io/badge/tested-macOS%2010.14-black.svg)
+![GitHub issues](https://img.shields.io/github/issues/typerror/github-dark-fusion.svg)
+![GitHub file size](https://img.shields.io/github/size/typerror/github-dark-fusion/desktop--dark-fusion.css.svg)
+![GitHub](https://img.shields.io/github/license/typerror/github-dark-fusion.svg)
 
 # GitHub Desktop Dark Fusion Theme
 
