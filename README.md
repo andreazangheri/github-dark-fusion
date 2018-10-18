@@ -1,19 +1,24 @@
-# Deprecated! 🎉
+# Warning!
 
-There's now a dark theme (currently in beta) built into GitHub Desktop.
+This theme will override your current theme until the next update.
 
-Access it from **File > Options... > Appearance**
+At the moment this theme has been tested only on macOS 10.14
 
---------------------------------------------------------------------------------
+![](https://img.shields.io/badge/theme-dark--fusion-orange.svg)
+![Github file size](https://img.shields.io/github/size/typerror/github-dark-fusion/desktop--dark-fusion.css.svg)
+![](https://img.shields.io/github/license/typerror/github-dark-fusion.svg)
+![](https://img.shields.io/github/issues/typerror/github-dark-fusion.svg)
+![]()
 
-# GitHub Desktop Dark Theme
+# GitHub Desktop Dark Fusion Theme
 
-A sleek stopgap stylesheet for adding dark mode to GitHub Desktop ([issue #1515](https://github.com/desktop/desktop/issues/1515))
+A custom theme based on [1j01](https://gist.github.com/1j01/d8f8d11785d8fb21a70654e7aa8a4553) dark theme.
 
 ## Install
 
-1. Open the devtools with **View > Toggle developer tools** (or <kbd>Ctrl+Shift+I</kbd>)
-2. Paste in the following into the Console and hit <kbd>Enter</kbd>:
+1. Open Github Desktop
+2. Open the devtools with **View > Toggle developer tools** (or <kbd>Ctrl+Shift+I</kbd>)
+3. Paste in the following into the Console and hit <kbd>Enter</kbd>:
 ```js
 const fs = require('fs');
 const path = require('path');
@@ -30,7 +35,7 @@ if (fs.existsSync(path.join(res, 'app/index.html'))) {
 
 let html = fs.readFileSync(html_file_path, "utf8");
 
-const link_to_inject = '<link href="https://rawgit.com/1j01/d8f8d11785d8fb21a70654e7aa8a4553/raw/desktop-dark.css" rel="stylesheet">';
+const link_to_inject = '<link href="https://raw.githubusercontent.com/typerror/github-dark-fusion/master/desktop--dark-fusion.css" rel="stylesheet">';
 html = html
 	.replace(/<link[^>]+(rawgit|custom-theme)[^>]+>/, '') // remove existing custom stylesheet if there is one
 	.replace('</head>', `\n${link_to_inject}</head>`); // add stylesheet
@@ -60,15 +65,3 @@ GitHub Desktop will refresh and the theme should be applied.
 
 You'll need to reapply the stylesheet when GitHub Desktop updates.  
 Try opening the devtools console and hitting <kbd>↑</kbd> + <kbd>Enter</kbd>.
-(If that doesn't work you can come back here and see if the code is updated, or if it's deprecated because they've finally added a dark mode.)
-
-## TODO
-
-- pull in the rest of the changes by @ObserverOfTime
-	- what is (or was) `#configure-git-user .commit-list-example`? (and does it need styling?)
-- `.pull-request-tab .count` (the `background` is hardcoded, but uses CSS variable for text color, tisk tisk)
-- fix missing border at top of branches dropdown (`.branches-container > .tab-bar { border-top: var(--base-border); }`)
-
-## Thanks
-
-Thanks to @ObserverOfTime for improved cross platform compatibility in the install script and higher contrast colors for the code highlighting in diffs
