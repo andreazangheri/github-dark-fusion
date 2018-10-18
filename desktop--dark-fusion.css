@@ -1,0 +1,405 @@
+
+/**
+ * All of the CSS variables are copied in from the compiled ui.css
+ * Variables that *categorically* shouldn't be overridden are commented out,
+ * but many are simply left unchanged.
+ */
+
+:root {
+  /* these should probably stay the same
+  --color-new: #28a745;
+  --color-deleted: #d73a49;
+  --color-modified: #dbab09;
+  --color-renamed: #0366d6;
+  --color-conflicted: #f66a0a;
+  */
+  --text-color: #ffffff;
+  --text-secondary-color: #ADB7C3;
+  --text-tertiary-color: #ADB7C3;
+  --background-color: #2F3542;
+  /* layout should stay the same
+  --button-height: 25px; */
+  --button-background: #41AFB6;
+  --button-border-radius: 2px;
+  --button-hover-background: #3f9ba0;
+  --button-text-color: #fff;
+  --button-focus-border-color: #3f9ba0;
+  --link-button-color: #41AFB6;
+  --secondary-button-background: #2F3542;
+  --secondary-button-hover-background: #20242a;
+  --secondary-button-text-color: var(--text-color);
+  --secondary-button-focus-shadow-color: rgba(64, 64, 64, 0.27);
+  --secondary-button-focus-border-color: #20242a;
+  /* fonts should stay the same
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+  /**
+   * Font weight to use for semibold text
+   */
+  /* fonts should stay the same
+  --font-weight-semibold: 600; */
+  /**
+   * Font weight to use for light text
+   */
+  /* fonts should stay the same
+  --font-weight-light: 300;
+  --font-size: 12px;
+  --font-size-sm: 11px;
+  --font-size-md: 14px;
+  --font-size-lg: 28px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 42px; */
+  /** Extra small font size, be very conservative with the use of this */
+  /* fonts should stay the same
+  --font-size-xs: 9px; */
+  /**
+   * Background color for custom scroll bars.
+   * The color is applied to the thumb part of the scrollbar.
+   *
+   * Note: Only applies to win32 platforms
+   */
+  --scroll-bar-thumb-background-color: rgba(142, 142, 142, 0.3);
+  /**
+   * Background color for custom scroll bars in their active state.
+   * The color is applied to the thumb part of the scrollbar.
+   *
+   * Note: Only applies to win32 platforms
+   */
+  --scroll-bar-thumb-background-color-active: rgba(226, 226, 226, 0.5);
+
+  --box-alt-background-color: #2a3138;
+  /**
+   * Border color for boxes.
+   */
+  --box-border-color: #2F3542; /* Rows and colums border color */
+  --box-border-accent-color: #41AFB6;
+  /**
+   * Background color for selected boxes without keyboard focus
+   */
+  --box-selected-background-color: #1b1c1d;
+  /**
+   * Text color for when a user hovers over a boxe with a
+   * pointing device. Should not be used by boxes that doesn't
+   * implement a hover state since this will conflict with
+   * selection and active selection
+   */
+  --box-hover-text-color: #24292e;
+  /**
+   * Background color for when a user hovers over a boxe with a
+   * pointing device. Should not be used by boxes that doesn't
+   * implement a hover state since this will conflict with
+   * selection and active selection
+   */
+  /**
+   * Text color for selected boxes without keyboard focus
+   */
+  --box-selected-text-color: var(--text-color);
+  /**
+   * Border color for selected boxes without keyboard focus
+   */
+  --box-selected-border-color: #959da5;
+  /**
+   * Background color for selected boxes with active keyboard focus
+   */
+  --box-selected-active-background-color: #0366d6;
+  /**
+   * Text color for selected boxes with active keyboard focus
+   */
+  --box-selected-active-text-color: #fff;
+  /**
+   * Border color for selected boxes with active keyboard focus
+   */
+  --box-selected-active-border-color: #959da5;
+  /**
+   * The height of the title bar area on Win32 platforms
+   * If changed, update titleBarHeight in 'app/src/ui/dialog/dialog.tsx'
+  */
+  /* layout should stay the same
+  --win32-title-bar-height: 28px; */
+  --win32-title-bar-background-color: #24292e;
+  /**
+   * The height of the title bar area on darwin platforms
+   * If changed, update titleBarHeight in 'app/src/ui/dialog/dialog.tsx'
+  */
+  /* layout should stay the same
+  --darwin-title-bar-height: 22px;
+  --spacing: 10px;
+  --spacing-double: calc(var(--spacing) * 2);
+  --spacing-triple: calc(var(--spacing) * 3);
+  --spacing-quad: calc(var(--spacing) * 4);
+  --spacing-half: calc(var(--spacing) / 2);
+  --spacing-third: calc(var(--spacing) / 3); */
+  /* this should probably stay the same
+  --border-radius: 3px; */
+  --base-border: 1px solid var(--box-border-color);
+  --shadow-color: rgba(71, 83, 95, 0.19);
+  --base-box-shadow: 0 2px 7px var(--shadow-color);
+  /* layout should stay the same
+  --toolbar-height: 50px; */
+  --toolbar-background-color: #2F3542;
+  --toolbar-text-color: #ffffff;
+  --toolbar-text-secondary-color: #ADB7C3;
+  --toolbar-button-color: var(--toolbar-text-color);
+  --toolbar-button-background-color: transparent;
+  --toolbar-button-border-color: #2F3542; /* Replace this with the border color that you want */
+  --toolbar-button-secondary-color: var(--toolbar-text-secondary-color);
+  --toolbar-button-hover-color: #fff;
+  --toolbar-button-hover-background-color: #2F3542;
+  --toolbar-button-hover-border-color: var(--toolbar-button-border-color);
+  --toolbar-button-focus-background-color: #2F3542;
+  --toolbar-button-active-color: var(--text-color);
+  --toolbar-button-active-background-color: var(--background-color);
+  --toolbar-button-active-border-color: #2F3542;
+  --toolbar-button-progress-color: #2F3542;
+  --toolbar-button-focus-progress-color: #444d56;
+  --toolbar-button-hover-progress-color: #444d56;
+  --toolbar-dropdown-open-progress-color: #ADB7C3;
+  /* layout should stay the same
+  --tab-bar-height: 29px; */
+  --tab-bar-active-color: #41AFB6;
+  --tab-bar-background-color: #fff;
+  /** Win32 has custom scrol bars, see _scroll.scss */
+  /* layout should stay the same
+  --win32-scroll-bar-size: 10px; */
+  /**
+   * The z-index for popups. Nothing should be higher, but other z-indexes can
+   * be defined in terms of it.
+   *
+   * 10 seems arbitrary (because it is) but we have to go that high because
+   * codemirror is all over the place with their z-indexes and uses at least
+   * 0-6.
+   */
+  /* layout should stay the same
+  --popup-z-index: 10;
+  --popup-overlay-z-index: calc(var(--popup-z-index) - 1);
+  --foldout-z-index: calc(var(--popup-z-index) - 2); */
+  /** The highlight color used for focus rings and focus box shadows */
+  --focus-color: #41AFB6;
+  /**
+   * Variables for form elements
+   */
+  /* layout should stay the same
+  --text-field-height: 25px; */
+  --text-field-focus-shadow-color: rgba(3, 102, 214, 0.25);
+  /**
+   * Diff view
+   */
+  --diff-text-color: #c1d5ea;
+  --diff-border-color: #424950;
+  --diff-gutter-color: #424950;
+  --diff-line-number-color: #929ead;
+  /* layout should stay the same
+  --diff-line-number-column-width: 50px; */
+  --diff-selected-background-color: #2188ff;
+  --diff-selected-border-color: #005cc5;
+  --diff-selected-gutter-color: #005cc5;
+  --diff-selected-text-color: #fff;
+  --diff-add-background-color: #0b2d11;
+  --diff-add-border-color: #2ca248;
+  --diff-add-gutter-color: #2ca248;
+  --diff-add-gutter-background-color: #00440f;
+  --diff-add-inner-background-color: #0e6122;
+  --diff-add-text-color: var(--diff-text-color);
+  --diff-add-hover-background-color: #00801f;
+  --diff-add-hover-border-color: #34d058;
+  --diff-add-hover-gutter-color: #34d058;
+  --diff-add-hover-text-color: var(--text-color);
+  --diff-delete-background-color: #310f12;
+  --diff-delete-border-color: #d2283b;
+  --diff-delete-gutter-color: #d2283b;
+  --diff-delete-gutter-background-color: #61000b;
+  --diff-delete-inner-background-color: #7d1e29;
+  --diff-delete-text-color: var(--diff-text-color);
+  --diff-delete-hover-background-color: #980011;
+  --diff-delete-hover-border-color: #f97583;
+  --diff-delete-hover-gutter-color: #f97583;
+  --diff-delete-hover-text-color: var(--text-color);
+  --diff-hunk-background-color: #17191b;
+  --diff-hunk-border-color: #3c4248;
+  --diff-hunk-gutter-color: #424950;
+  --diff-hunk-text-color: #6a737d;
+  --diff-hover-background-color: #79b8ff;
+  --diff-hover-border-color: #2188ff;
+  --diff-hover-gutter-color: #2188ff;
+  --diff-hunk-gutter-background-color: #17191b;
+  --diff-hover-text-color: #fff;
+  /* layout/animation should stay the same
+  --undo-animation-duration: 500ms; */
+  /**
+   * Ahead/behind view
+   */
+  --ahead-behind-background-color: #6a737d;
+  --error-color: #d73a49;
+  /* TOOD: style errors and warnings */
+  --form-error-background: #ffdce0;
+  --form-error-border-color: #fdaeb7;
+  --form-error-text-color: #9e1c23;
+  /** Dialog */
+  --dialog-warning-color: #f9c513;
+  --dialog-warning-text-color: #b08800;
+  --dialog-error-color: #d73a49;
+  /** Inline paths and code */
+  --path-segment-background: #3b4046;
+  /* layout should stay the same
+  --path-segment-padding: var(--spacing-third); */
+  /* layout/animation should stay the same
+  --easing-ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --easing-ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  --easing-ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1); */
+}
+
+
+input,
+textarea,
+select {
+  background: var(--background-color);
+  border-color: var(--box-border-color) !important;
+}
+body.platform-win32 .select-component select {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAHlBMVEUAAAD///////////////////////////////////8kfJuVAAAACXRSTlMABBg4ZJvH5/vidbtgAAAAOklEQVR4AVXMuw2AAAwDUecf9l8YhDgBr7OLUx0/JevvbpN83j2uSyx7Q7fkSD2KIKwJwocgYgkiCZ4+JQLR5CxFcgAAAABJRU5ErkJggg==");
+  background-size: 8px 5px;
+}
+
+.CodeMirror,
+.diff-context {
+/*   background: var(--background-color); */
+  background: black;
+  /* TODO: should probably be a variable like --diff-background-color */
+}
+
+.CodeMirror-code > div:last-of-type {
+/*   border-bottom: 1px solid var(--diff-border-color); */
+  border-bottom: 1px solid var(--background-color);
+}
+
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: var(--background-color); /* The little square between H and V scrollbars */
+}
+
+body.platform-darwin #desktop-app-title-bar {
+  height: var(--darwin-title-bar-height);
+  background: linear-gradient(to bottom, #2F3542 0%, #2F3542 100%);
+  border-bottom: 1px solid #000; /* Removing bottom border will eliminate the bottom title-bar border */
+}
+
+#desktop-app-toolbar {
+  border-bottom: 1px solid #000;
+}
+
+.commit-summary-description-scroll-view:before {
+  /* The original gradient included a half opacity value and hardcoded the background color. */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 40px, var(--background-color) 55px);
+}
+
+/**
+ * With border-right it won't line up between the button and the foldout (by a pixel),
+ * and an inset box-shadow will get covered up. Create an inset border with a psuedo element.
+ */
+#desktop-app-toolbar .foldout::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-right: var(--base-border);
+}
+/**
+ * The foldout can be wider than the button, so we want a non-rectangular border.
+ * First create a line between the foldout and the toolbar.
+ */
+#desktop-app-toolbar .foldout::before
+{
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  border-top: var(--base-border);
+}
+/**
+ * For the menus, we want a border all around,
+ * but for the other foldouts I'm relying on existing borders in the UI
+ * (the left edge of the window, and the edge of the column under the repo selector)
+ * (and the bottom edge of the window)
+ */
+/* #desktop-app-toolbar .foldout > *, */
+.menu-pane {
+  border: var(--base-border);
+}
+/**
+ * Then cover up the part of the line between the button and its foldout.
+ */
+.toolbar-dropdown.open > .toolbar-button > button::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: -1px;
+  border-bottom: 1px solid var(--background-color);
+  z-index: var(--popup-z-index);
+}
+/**
+ * The menu buttons need some extra borders to complete the non-rectangular shape.
+ * (The irregular hexagon, technically.)
+ */
+#app-menu-bar .toolbar-dropdown.open > .toolbar-button > button::after {
+  border-left: var(--base-border);
+  border-right: var(--base-border);
+}
+/**
+ * Note: potentially affecting layout!
+ * This should be applied regardless of dark mode to avoid weird inconsistencies.
+ */
+.toolbar-dropdown,
+.toolbar-dropdown > .toolbar-button,
+.toolbar-dropdown > .toolbar-button > button {
+  overflow: visible;
+}
+
+/**
+ * TODO: better control over colors in the art
+ * with alternate images for multi-color art
+ * and CSS fill-overridable SVGs for monochrome art
+ */
+#repository .blankslate-image {
+/*   filter: saturate(24) hue-rotate(50deg) saturate(0.3) brightness(0.9) opacity(0.2); */
+  filter: invert() hue-rotate(200deg) brightness(5) opacity(0.2);
+}
+
+/**
+ * Lighter text colors in code to improve visibility with the dark theme
+ */
+.cm-s-default .cm-header {
+  color: lightsalmon;
+}
+.cm-s-default .cm-tag {
+  color: lightgreen;
+}
+.cm-s-default .cm-qualifier {
+  color: turquoise;
+}
+.cm-s-default .cm-atom {
+  color: aqua;
+}
+.cm-s-default .cm-keyword {
+  color: tomato;
+}
+.cm-s-default .cm-property {
+  color: steelblue;
+}
+.cm-s-default .cm-attribute {
+  color: dodgerblue;
+}
+.cm-s-default span[class*="cm-string"] {
+  color: lightgray;
+}
+.cm-s-default .cm-comment {
+  color: lightslategray;
+}
+.cm-s-default .cm-link {
+  color: violet;
+}
+.cm-s-default span[class*="cm-variable"] {
+  color : hotpink;
+}
