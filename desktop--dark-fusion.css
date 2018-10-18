@@ -14,9 +14,9 @@
   --color-conflicted: #f66a0a;
   */
   --text-color: #ffffff;
-  --text-secondary-color: #ADB7C3;
-  --text-tertiary-color: #ADB7C3;
-  --background-color: #2F3542;
+  --text-secondary-color: #adb7c3;
+  --text-tertiary-color: #adb7c3;
+  --background-color: #2f3542;
   /* layout should stay the same
   --button-height: 25px; */
   --button-background: #41AFB6;
@@ -25,11 +25,11 @@
   --button-text-color: #fff;
   --button-focus-border-color: #3f9ba0;
   --link-button-color: #41AFB6;
-  --secondary-button-background: #2F3542;
-  --secondary-button-hover-background: #2F3542;
+  --secondary-button-background: #2f3542;
+  --secondary-button-hover-background: #2f3542;
   --secondary-button-text-color: var(--text-color);
   --secondary-button-focus-shadow-color: rgba(64, 64, 64, 0.27);
-  --secondary-button-focus-border-color: #2F3542;
+  --secondary-button-focus-border-color: #2f3542;
   /* fonts should stay the same
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   --font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
@@ -66,16 +66,16 @@
    * Note: Only applies to win32 platforms
    */
   --scroll-bar-thumb-background-color-active: rgba(226, 226, 226, 0.5);
-  --box-alt-background-color: #2F3542;
+  --box-alt-background-color: #2f3542;
   /**
    * Border color for boxes.
    */
-  --box-border-color: #2F3542; /* Rows and colums border color */
+  --box-border-color: #292e3a; /* Rows and colums border color */
   --box-border-accent-color: #41AFB6;
   /**
    * Background color for selected boxes without keyboard focus
    */
-  --box-selected-background-color: #1b1c1d;
+  --box-selected-background-color: #292e3a;
   /**
    * Text color for when a user hovers over a boxe with a
    * pointing device. Should not be used by boxes that doesn't
@@ -100,7 +100,7 @@
   /**
    * Background color for selected boxes with active keyboard focus
    */
-  --box-selected-active-background-color: #0366d6;
+  --box-selected-active-background-color: #292e3a;
   /**
    * Text color for selected boxes with active keyboard focus
    */
@@ -135,28 +135,29 @@
   --base-box-shadow: 0 2px 7px var(--shadow-color);
   /* layout should stay the same
   --toolbar-height: 50px; */
-  --toolbar-background-color: #2F3542;
+  --toolbar-background-color: #2f3542;
   --toolbar-text-color: #ffffff;
-  --toolbar-text-secondary-color: #ADB7C3;
+  --toolbar-text-secondary-color: #adb7c3;
   --toolbar-button-color: var(--toolbar-text-color);
   --toolbar-button-background-color: transparent;
-  --toolbar-button-border-color: #2F3542; /* Replace this with the border color that you want */
+  --toolbar-button-border-color: #292e3a; /* Replace this with the border color that you want */
   --toolbar-button-secondary-color: var(--toolbar-text-secondary-color);
   --toolbar-button-hover-color: #fff;
-  --toolbar-button-hover-background-color: #2F3542;
+  --toolbar-button-hover-background-color: #2f3542;
   --toolbar-button-hover-border-color: var(--toolbar-button-border-color);
-  --toolbar-button-focus-background-color: #2F3542;
+  --toolbar-button-focus-background-color: #2f3542;
   --toolbar-button-active-color: var(--text-color);
   --toolbar-button-active-background-color: var(--background-color);
-  --toolbar-button-active-border-color: #2F3542;
-  --toolbar-button-progress-color: #2F3542;
+  --toolbar-button-active-border-color: #292e3a;
+  --toolbar-button-progress-color: #2f3542;
   --toolbar-button-focus-progress-color: #444d56;
   --toolbar-button-hover-progress-color: #444d56;
-  --toolbar-dropdown-open-progress-color: #ADB7C3;
+  --toolbar-dropdown-open-progress-color: #adb7c3;
   /* layout should stay the same
   --tab-bar-height: 29px; */
   --tab-bar-active-color: #41AFB6;
   --tab-bar-background-color: #fff;
+  --tab-bar-count-background-color: #ec7e56;
   /** Win32 has custom scrol bars, see _scroll.scss */
   /* layout should stay the same
   --win32-scroll-bar-size: 10px; */
@@ -252,7 +253,7 @@ input,
 textarea,
 select {
   background: var(--background-color);
-  border-color: var(--box-border-color) !important;
+  border-color: #41afb6;
 }
 body.platform-win32 .select-component select {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAHlBMVEUAAAD///////////////////////////////////8kfJuVAAAACXRSTlMABBg4ZJvH5/vidbtgAAAAOklEQVR4AVXMuw2AAAwDUecf9l8YhDgBr7OLUx0/JevvbpN83j2uSyx7Q7fkSD2KIKwJwocgYgkiCZ4+JQLR5CxFcgAAAABJRU5ErkJggg==");
@@ -277,7 +278,7 @@ body.platform-win32 .select-component select {
 
 body.platform-darwin #desktop-app-title-bar {
   height: var(--darwin-title-bar-height);
-  background: linear-gradient(to bottom, #2F3542 0%, #2F3542 100%);
+  background: linear-gradient(to bottom, #2f3542 0%, #2f3542 100%);
   border-bottom: 1px solid #292e3a; /* Removing bottom border will eliminate the bottom title-bar border */
 }
 
