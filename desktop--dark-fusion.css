@@ -3,6 +3,8 @@
  * All of the CSS variables are copied in from the compiled ui.css
  * Variables that *categorically* shouldn't be overridden are commented out,
  * but many are simply left unchanged.
+
+ --diff-selected-background-color:
  */
 
 :root {
@@ -14,18 +16,18 @@
   --color-conflicted: #f66a0a;
   */
   --text-color: #ffffff;
-  --text-secondary-color: #ADB7C3;
-  --text-tertiary-color: #ADB7C3;
-  --background-color: #2F3542;
+  --text-secondary-color: #adb7c3;
+  --text-tertiary-color: #adb7c3;
+  --background-color: #2f3542;
   /* layout should stay the same
   --button-height: 25px; */
-  --button-background: #41AFB6;
+  --button-background: #41afb6;
   --button-border-radius: 2px;
   --button-hover-background: #3f9ba0;
   --button-text-color: #fff;
   --button-focus-border-color: #3f9ba0;
-  --link-button-color: #41AFB6;
-  --secondary-button-background: #2F3542;
+  --link-button-color: #41afb6;
+  --secondary-button-background: #2f3542;
   --secondary-button-hover-background: #20242a;
   --secondary-button-text-color: var(--text-color);
   --secondary-button-focus-shadow-color: rgba(64, 64, 64, 0.27);
@@ -67,23 +69,23 @@
    */
   --scroll-bar-thumb-background-color-active: rgba(226, 226, 226, 0.5);
 
-  --box-alt-background-color: #2a3138;
+  --box-alt-background-color: #2f3542;
   /**
    * Border color for boxes.
    */
-  --box-border-color: #2F3542; /* Rows and colums border color */
-  --box-border-accent-color: #41AFB6;
+  --box-border-color: #292e3a; /* Rows and colums border color */
+  --box-border-accent-color: #41afb6;
   /**
    * Background color for selected boxes without keyboard focus
    */
-  --box-selected-background-color: #1b1c1d;
+  --box-selected-background-color: #292e3a;
   /**
    * Text color for when a user hovers over a boxe with a
    * pointing device. Should not be used by boxes that doesn't
    * implement a hover state since this will conflict with
    * selection and active selection
    */
-  --box-hover-text-color: #24292e;
+  --box-hover-text-color: #292e3a;
   /**
    * Background color for when a user hovers over a boxe with a
    * pointing device. Should not be used by boxes that doesn't
@@ -101,7 +103,7 @@
   /**
    * Background color for selected boxes with active keyboard focus
    */
-  --box-selected-active-background-color: #0366d6;
+  --box-selected-active-background-color: #292e3a;
   /**
    * Text color for selected boxes with active keyboard focus
    */
@@ -116,7 +118,7 @@
   */
   /* layout should stay the same
   --win32-title-bar-height: 28px; */
-  --win32-title-bar-background-color: #24292e;
+  --win32-title-bar-background-color: #2f3542;
   /**
    * The height of the title bar area on darwin platforms
    * If changed, update titleBarHeight in 'app/src/ui/dialog/dialog.tsx'
@@ -136,28 +138,29 @@
   --base-box-shadow: 0 2px 7px var(--shadow-color);
   /* layout should stay the same
   --toolbar-height: 50px; */
-  --toolbar-background-color: #2F3542;
+  --toolbar-background-color: #2f3542;
   --toolbar-text-color: #ffffff;
-  --toolbar-text-secondary-color: #ADB7C3;
+  --toolbar-text-secondary-color: #adb7c3;
   --toolbar-button-color: var(--toolbar-text-color);
   --toolbar-button-background-color: transparent;
-  --toolbar-button-border-color: #2F3542; /* Replace this with the border color that you want */
+  --toolbar-button-border-color: #292e3a; /* Replace this with the border color that you want */
   --toolbar-button-secondary-color: var(--toolbar-text-secondary-color);
   --toolbar-button-hover-color: #fff;
-  --toolbar-button-hover-background-color: #2F3542;
+  --toolbar-button-hover-background-color: #2f3542;
   --toolbar-button-hover-border-color: var(--toolbar-button-border-color);
-  --toolbar-button-focus-background-color: #2F3542;
+  --toolbar-button-focus-background-color: #2f3542;
   --toolbar-button-active-color: var(--text-color);
   --toolbar-button-active-background-color: var(--background-color);
-  --toolbar-button-active-border-color: #2F3542;
-  --toolbar-button-progress-color: #2F3542;
+  --toolbar-button-active-border-color: #2f3542;
+  --toolbar-button-progress-color: #2f3542;
   --toolbar-button-focus-progress-color: #444d56;
   --toolbar-button-hover-progress-color: #444d56;
-  --toolbar-dropdown-open-progress-color: #ADB7C3;
+  --toolbar-dropdown-open-progress-color: #adb7c3;
   /* layout should stay the same
   --tab-bar-height: 29px; */
-  --tab-bar-active-color: #41AFB6;
+  --tab-bar-active-color: #41afb6;
   --tab-bar-background-color: #fff;
+  --tab-bar-count-background-color: #ec7e56; /* Changes and PR count background color */
   /** Win32 has custom scrol bars, see _scroll.scss */
   /* layout should stay the same
   --win32-scroll-bar-size: 10px; */
@@ -174,7 +177,7 @@
   --popup-overlay-z-index: calc(var(--popup-z-index) - 1);
   --foldout-z-index: calc(var(--popup-z-index) - 2); */
   /** The highlight color used for focus rings and focus box shadows */
-  --focus-color: #41AFB6;
+  --focus-color: #41afb6;
   /**
    * Variables for form elements
    */
@@ -253,7 +256,7 @@ input,
 textarea,
 select {
   background: var(--background-color);
-  border-color: var(--box-border-color) !important;
+  border-color: #41afb6;
 }
 body.platform-win32 .select-component select {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAMAAACKYC6uAAAAHlBMVEUAAAD///////////////////////////////////8kfJuVAAAACXRSTlMABBg4ZJvH5/vidbtgAAAAOklEQVR4AVXMuw2AAAwDUecf9l8YhDgBr7OLUx0/JevvbpN83j2uSyx7Q7fkSD2KIKwJwocgYgkiCZ4+JQLR5CxFcgAAAABJRU5ErkJggg==");
@@ -278,12 +281,12 @@ body.platform-win32 .select-component select {
 
 body.platform-darwin #desktop-app-title-bar {
   height: var(--darwin-title-bar-height);
-  background: linear-gradient(to bottom, #2F3542 0%, #2F3542 100%);
-  border-bottom: 1px solid #000; /* Removing bottom border will eliminate the bottom title-bar border */
+  background: linear-gradient(to bottom, #2f3542 0%, #2f3542 100%); /* Maybe change this to #292e3a color*/
+  border-bottom: 1px solid #292e3a; /* Removing bottom border will eliminate the bottom title-bar border */
 }
 
 #desktop-app-toolbar {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #292e3a;
 }
 
 .commit-summary-description-scroll-view:before {
