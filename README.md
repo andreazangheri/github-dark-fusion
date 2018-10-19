@@ -61,5 +61,4 @@ win.webContents.session.clearCache(() => {
 
 GitHub Desktop will refresh and the theme should be applied.
 
-You'll need to reapply the stylesheet when GitHub Desktop updates.  
-Try opening the devtools console and hitting <kbd>↑</kbd> + <kbd>Enter</kbd>.
+You'll need to reapply the stylesheet when GitHub Desktop updates.
