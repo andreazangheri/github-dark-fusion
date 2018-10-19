@@ -138,6 +138,7 @@
   --toolbar-background-color: #2f3542;
   --toolbar-text-color: #ffffff;
   --toolbar-text-secondary-color: #adb7c3;
+  --toolbar-badge-background-color: #ec7e56;
   --toolbar-button-color: var(--toolbar-text-color);
   --toolbar-button-background-color: transparent;
   --toolbar-button-border-color: #292e3a; /* Replace this with the border color that you want */
@@ -155,8 +156,8 @@
   --toolbar-dropdown-open-progress-color: #adb7c3;
   /* layout should stay the same
   --tab-bar-height: 29px; */
-  --tab-bar-active-color: #41afb6;
-  --tab-bar-background-color: #fff;
+  --tab-bar-active-color: #41AFB6;
+  --tab-bar-background-color: #292e3a;
   --tab-bar-count-background-color: #ec7e56;
   /** Win32 has custom scrol bars, see _scroll.scss */
   /* layout should stay the same
@@ -174,6 +175,12 @@
   --popup-overlay-z-index: calc(var(--popup-z-index) - 1);
   --foldout-z-index: calc(var(--popup-z-index) - 2); */
   /** The highlight color used for focus rings and focus box shadows */
+  --list-item-badge-color: #2F3542;
+  --list-item-badge-background-color: #41AFB6;
+  --list-item-selected-badge-color: #2F3542;
+  --list-item-selected-badge-background-color: #EC7E56;
+  --list-item-selected-active-badge-color: #2F3542;
+  --list-item-selected-active-badge-background-color: #EC7E56;
   --focus-color: #41afb6;
   /**
    * Variables for form elements
@@ -184,16 +191,16 @@
   /**
    * Diff view
    */
-  --diff-text-color: #c1d5ea;
-  --diff-border-color: #424950;
-  --diff-gutter-color: #424950;
-  --diff-line-number-color: #929ead;
+  --diff-text-color: #ADB7C3;
+  --diff-border-color: #292e3a;
+  --diff-gutter-color: #292e3a;
+  --diff-line-number-color: #656F7B;
   /* layout should stay the same
   --diff-line-number-column-width: 50px; */
-  --diff-selected-background-color: #2188ff;
-  --diff-selected-border-color: #005cc5;
-  --diff-selected-gutter-color: #005cc5;
-  --diff-selected-text-color: #fff;
+  --diff-selected-background-color: #41AFB6;
+  --diff-selected-border-color: #3f9ba0;
+  --diff-selected-gutter-color: #3f9ba0;
+  --diff-selected-text-color: #ADB7C3;
   --diff-add-background-color: #0b2d11;
   --diff-add-border-color: #2ca248;
   --diff-add-gutter-color: #2ca248;
@@ -214,13 +221,13 @@
   --diff-delete-hover-border-color: #f97583;
   --diff-delete-hover-gutter-color: #f97583;
   --diff-delete-hover-text-color: var(--text-color);
-  --diff-hunk-background-color: #17191b;
-  --diff-hunk-border-color: #3c4248;
-  --diff-hunk-gutter-color: #424950;
-  --diff-hunk-text-color: #6a737d;
-  --diff-hover-background-color: #79b8ff;
-  --diff-hover-border-color: #2188ff;
-  --diff-hover-gutter-color: #2188ff;
+  --diff-hunk-background-color: #292e3a;
+  --diff-hunk-border-color: #2F3542;
+  --diff-hunk-gutter-color: #2F3542;
+  --diff-hunk-text-color: #fff;
+  --diff-hover-background-color: #41AFB6;
+  --diff-hover-border-color: #3f9ba0;
+  --diff-hover-gutter-color: #3f9ba0;
   --diff-hunk-gutter-background-color: #17191b;
   --diff-hover-text-color: #fff;
   /* layout/animation should stay the same
@@ -228,7 +235,7 @@
   /**
    * Ahead/behind view
    */
-  --ahead-behind-background-color: #6a737d;
+  --ahead-behind-background-color: #656F7B;
   --error-color: #d73a49;
   /* TOOD: style errors and warnings */
   --form-error-background: #ffdce0;
@@ -262,10 +269,10 @@ body.platform-win32 .select-component select {
 
 .CodeMirror,
 .diff-context {
-/*   background: var(--background-color); */
-  background: black;
+  /*   background: var(--background-color); */
+  background: #2f3542;
   /* TODO: should probably be a variable like --diff-background-color */
-}
+  }
 
 .CodeMirror-code > div:last-of-type {
 /*   border-bottom: 1px solid var(--diff-border-color); */
@@ -395,7 +402,7 @@ body.platform-darwin #desktop-app-title-bar {
   color: #adb7c3;
 }
 .cm-s-default .cm-comment {
-  color: #656f7b;
+  color: #ADB7C3;
 }
 .cm-s-default .cm-link {
   color: violet;
