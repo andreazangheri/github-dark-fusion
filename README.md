@@ -15,7 +15,7 @@ At the moment this theme has been tested only on macOS 10.14
 ## Install
 
 1. Open Github Desktop
-2. Open the devtools with **View > Toggle developer tools** (or <kbd>Ctrl+Shift+I</kbd>)
+2. Open the devtools with **View > Toggle developer tools** (or <kbd>Cmd+alt+I</kbd>)
 3. Paste in the following into the Console and hit <kbd>Enter</kbd>:
 ```js
 const fs = require('fs');
