@@ -3,22 +3,20 @@
 ![Theme](https://img.shields.io/badge/theme-dark--fusion-orange.svg)
 ![GitHub release](https://img.shields.io/github/release/typerror/github-dark-fusion.svg)
 ![Github commits (since latest release)](https://img.shields.io/github/commits-since/typerror/github-dark-fusion/latest.svg)
-![Tested platform](https://img.shields.io/badge/tested-macOS%2010.14-black.svg)
+![Tested platform](https://img.shields.io/badge/macos-10.14-black.svg)
 ![GitHub issues](https://img.shields.io/github/issues/typerror/github-dark-fusion.svg)
 ![GitHub file size](https://img.shields.io/github/size/typerror/github-dark-fusion/desktop--dark-fusion.css.svg)
 ![GitHub](https://img.shields.io/github/license/typerror/github-dark-fusion.svg)
 
-# Warning!
-
-This theme will override your __current selected__ theme.
-
-At the moment this theme has been tested only on macOS 10.14
-
 ## Install
+
+This theme will override your **currently selected** theme.
+
+At the moment it has been tested on macOS High Sierra and Mojave 10.14
 
 1. Open Github Desktop
 2. Open the devtools with **View > Toggle developer tools** (or <kbd>Cmd+alt+I</kbd>)
-3. Paste in the following into the Console and hit <kbd>Enter</kbd>:
+3. Paste in the following into the **Console** and hit <kbd>Enter</kbd>:
 ```js
 const fs = require('fs');
 const path = require('path');
