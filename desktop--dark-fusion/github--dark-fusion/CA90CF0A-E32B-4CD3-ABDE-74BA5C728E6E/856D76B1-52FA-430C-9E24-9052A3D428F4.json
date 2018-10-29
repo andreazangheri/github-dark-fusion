@@ -1,0 +1,72 @@
+{
+  "_class": "bitmap",
+  "booleanOperation": -1,
+  "clippingMask": "{{0, 0}, {1, 1}}",
+  "clippingMaskMode": 0,
+  "do_objectID": "856D76B1-52FA-430C-9E24-9052A3D428F4",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "exportFormats": [
+    ],
+    "includedLayerIds": [
+    ],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "fillReplacesImage": false,
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": true,
+    "height": 1041,
+    "width": 1670,
+    "x": -1,
+    "y": -2
+  },
+  "hasClippingMask": false,
+  "image": {
+    "_class": "MSJSONFileReference",
+    "_ref": "images/6affcbf8db5628861c9f850e553a1a901ab0f921.png",
+    "_ref_class": "MSImageData"
+  },
+  "intendedDPI": 144,
+  "isFixedToViewport": false,
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 0,
+  "name": "github-dark-fusion",
+  "nameIsFixed": true,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "style": {
+    "_class": "style",
+    "endMarkerType": 0,
+    "miterLimit": 10,
+    "startMarkerType": 0,
+    "windingRule": 1
+  },
+  "userInfo": {
+    "com.animaapp.stc-sketch-plugin": {
+      "kModelPropertiesKey": {
+        "constraints": {
+          "aspectRatio": {
+            "constant": 1041,
+            "enabled": 1,
+            "modelID": "constraint_c1d916c8-eca1-4e1e-aaf3-4cf256bae52d",
+            "model_class": "ADModelConstraint",
+            "model_version": 0.1,
+            "multiplier": 1670
+          },
+          "automatic": 1,
+          "modelID": "viewConstraints_3e0b1244-09b3-47a5-9d7c-5d045ea0ea45",
+          "model_class": "ADModelViewConstraints",
+          "model_version": 0.1,
+          "scaleFactor": 1
+        }
+      }
+    }
+  }
+}
