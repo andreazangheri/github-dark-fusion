@@ -1,12 +1,17 @@
-# GitHub Desktop Dark Fusion Theme
+<h1 align="center">
+  <a href="./desktop--dark-fusion.png"><img src="./desktop--dark-fusion.png" alt="Github Desktop Dark Fusion Theme" width="800" height="auto"></a>
+  <br>
+  <br>
+  GitHub Desktop Dark Fusion Theme
+</h1>
 
-![Theme](https://img.shields.io/badge/theme-dark--fusion-orange.svg)
-![GitHub release](https://img.shields.io/github/release/typerror/github-dark-fusion.svg)
-![Github commits (since latest release)](https://img.shields.io/github/commits-since/typerror/github-dark-fusion/latest.svg)
-![Tested platform](https://img.shields.io/badge/macos-10.14-black.svg)
-![GitHub issues](https://img.shields.io/github/issues/typerror/github-dark-fusion.svg)
-![GitHub file size](https://img.shields.io/github/size/typerror/github-dark-fusion/desktop--dark-fusion.css.svg)
-![GitHub](https://img.shields.io/github/license/typerror/github-dark-fusion.svg)
+<h4 align="center">Dark Fusion Theme for GitHub macOS app</h4>
+
+<p align="center">
+  <a href="./desktop--dark-fusion.png"><img src="https://img.shields.io/badge/theme-Dark%20Fusion-2f3542.svg" alt="GitHub Dark Fusion"></a>
+  <a href="https://github.com/typerror/gitub-dark-fusion/releases"><img src="https://img.shields.io/github/release/typerror/github-dark-fusion.svg" alt="Release"></a>
+  <a href="https://github.com/typerror/github-dark-fusion/license"><img src="https://img.shields.io/github/license/typerror/github-dark-fusion.svg" alt="License"></a>
+</p>
 
 ## Install
 
