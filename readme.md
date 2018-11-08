@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="./desktop--dark-fusion.png"><img src="./desktop--dark-fusion.png" alt="Github Desktop Dark Fusion Theme" width="800" height="auto"></a>
+  <a href="./assets/logo.png"><img src="./assets/logo.png" alt="Github Desktop Dark Fusion Theme" width="200"></a>
   <br>
   <br>
   GitHub Desktop Dark Fusion Theme
@@ -74,10 +74,16 @@ GitHub Desktop will refresh and the theme should be applied.
 
 You'll need to reapply the stylesheet when GitHub Desktop updates.
 
+<h2>
+  <a href="./assets/desktop--dark-fusion.png"><img src="./assets/desktop--dark-fusion.png" alt="Github Dark Fusion Theme Preview" width="800"></a>
+</h2>
+
 ### Code Style
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-5e60ba.svg)](https://github.com/prettier/prettier)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-2f3542.svg)](https://github.com/prettier/prettier)
 
 ## License
+
+GitHub Desktop Dark Fusion Theme is not affiliated with GitHub. All other trademarks and copyrights are property of their respective owners.
 
 MIT. Copyright (c) [typerror](https://github.com/typerror).
