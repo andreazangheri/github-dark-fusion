@@ -2,9 +2,9 @@
 
 ![Theme](https://img.shields.io/badge/theme-dark--fusion-orange.svg)
 ![Tested platform](https://img.shields.io/badge/tested-macOS%2010.14-black.svg)
-![GitHub issues](https://img.shields.io/github/issues/typerror/github-dark-fusion.svg)
-![GitHub file size](https://img.shields.io/github/size/typerror/github-dark-fusion/desktop--dark-fusion.css.svg)
-![GitHub](https://img.shields.io/github/license/typerror/github-dark-fusion.svg)
+![GitHub issues](https://img.shields.io/github/issues/andreazangheri/github-dark-fusion.svg)
+![GitHub file size](https://img.shields.io/github/size/andreazangheri/github-dark-fusion/desktop--dark-fusion.css.svg)
+![GitHub](https://img.shields.io/github/license/andreazangheri/github-dark-fusion.svg)
 
 # Warning!
 
